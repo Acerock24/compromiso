@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { speaker: 'kiwi',   text: 'Kiwi: No se ni por que la acepte! no me gusta que me inviten cosas  me da pena!' },
     { speaker: 'ace',    text: 'Ace: Fue gracias a eso que pude acercarme mas!' },
     { speaker: 'kiwi',   text: 'Kiwi: Mmmmmm, o sea, era parte de tu plan?' },
-    { speaker: 'ace',    text: 'Ace: No, solo fue un detalle, pero hay algo qu nunca te pregunte! ' },
+    { speaker: 'ace',    text: 'Ace: No, solo fue un detalle, pero hay algo que nunca te pregunte! ' },
     { speaker: 'kiwi',   text: 'Kiwi: Que cosa?' },
     { speaker: 'ace',    text: 'Ace: Estaba rica la cocacola?' },
     { speaker: 'kiwi',   text: 'Kiwi: Pues! Sabia a cocacola.' },
