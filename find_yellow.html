@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Herman@ Kindred</title>
+  <link rel="stylesheet" href="css/find_yellow.css"/>
+</head>
+<body>
+  <audio id="puppiesMusic" src="audio/Who_Let_The_Dogs_Out.mp3" autoplay loop></audio>
+
+  <div class="find-scene">
+    <h1>¡Toca los cachorros y veras que pasa!</h1>
+    <p>Ayuda a Kiwi a encontrarle a Kindred, su nuev@ chermanit@.</p>
+    <div class="grid" id="puppyGrid">
+      <img src="img/cachorro_f.png"    data-correct="false" alt="Chanda #1" />
+      <img src="img/cachorro_e.png"   data-correct="true"  alt="Chanda #2"    />
+      <img src="img/cachorro_g.png"    data-correct="false" alt="Chanda #3" />
+      <img src="img/cachorro_h.png"    data-correct="false" alt="Chanda #4" />
+    </div>
+
+    <div id="feedback" class="feedback"></div>
+    <button id="confirmBtn" class="hidden">¡Sí, claro!</button>
+  </div>
+
+  <script src="js/find_yellow.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* css/intro.css */
+
+body, html {
+  margin: 0; padding: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
+  background: #1a1a2e;
+  font-family: 'Courier New', monospace;
+  color: #fff;
+}
+
+.scene {
+  position: relative;
+  width: 100%; height: 100%;
+}
+
+.background {
+  position: absolute; inset: 0;
+  background: url('../img/bosque_pixel.png') no-repeat center/cover;
+  filter: brightness(0.6);
+  z-index: 0;
+}
+
+.character {
+  position: absolute; bottom: 10%;
+  width: 120px; height: 120px;
+  background-size: contain; background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.character-lobo {
+  left: 8%;
+  background-image: url('../img/ace_avatar.png');
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.character-oveja {
+  right: 8%;
+  background-image: url('../img/kiwii_avatar.png');
+  animation: slideInRight 0.8s ease-out;
+}
+
+.dialog-box {
+  position: absolute; bottom: 25%;
+  left: 50%; transform: translateX(-50%);
+  background: rgba(26,26,46,0.8);
+  padding: 1rem 2rem; border-radius: 12px;
+  max-width: 80%; z-index: 2;
+  text-align: center;
+}
+
+.dialog-box p {
+  margin: 0; font-size: 1.2rem;
+}
+
+/* Firefly (luciérnaga) */
+.firefly {
+  position: absolute;
+  width: 192px;
+  height: 192px;
+  background-image: url('../img/firefly.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  animation: glow 1.5s ease-in-out infinite alternate;
+  z-index: 2;
+}
+
+#nextBtn {
+  position: absolute; bottom: 12%;
+  left: 50%; transform: translateX(-50%);
+  padding: 0.8rem 1.4rem; font-size: 1rem;
+  background: #cc00ff;
+  font-family: 'Courier New', monospace;
+  color: #fff;
+  color: #fefefe; border: none; border-radius: 20px;
+  cursor: pointer; box-shadow: 0 4px 12px rgba(254,197,87,0.5);
+  z-index: 3; display: none;
+  
+}
+
+button#nextBtn:hover {
+  background: linear-gradient(90deg, #ffd6e0, #ffe3cc);
+
+}
+#nextBtn.visible {
+  display: block;
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-200%); } to { transform: translateX(0); }
+}
+@keyframes slideInRight {
+  from { transform: translateX(200%); } to { transform: translateX(0); }
+}
+@keyframes glow {
+  from { opacity: 0.4; } to { opacity: 1; }
+}

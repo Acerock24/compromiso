@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¿Qué nombre le pondremos?</title>
+  <link rel="stylesheet" href="css/hangman.css"/>
+</head>
+<body>
+  <audio id="hangmanMusic" src="audio/hangman_theme.mp3" autoplay loop></audio>
+
+  <div class="hangman-scene">
+    <h1>¿Qué nombre le pondremos?</h1>
+    <p class="clue">Pista: Tu pintor favorito decia que la felicidad esta representada en un color.</p>
+
+    <div id="word" class="word"></div>
+
+    <div class="controls">
+      <input type="text" id="letterInput" maxlength="1" placeholder="A–Z"/>
+      <button id="guessBtn">Adivinar</button>
+    </div>
+
+    <p id="wrongLetters" class="wrong"></p>
+    <p id="status" class="status"></p>
+
+    <button id="finishBtn" class="hidden">Continuar Aventura</button>
+  </div>
+
+  <script src="js/hangman2.js"></script>
+</body>
+</html>

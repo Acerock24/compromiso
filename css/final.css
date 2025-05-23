@@ -1,0 +1,86 @@
+/* css/final.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Verdana&display=swap');
+
+body, html {
+  margin: 0; padding: 0;
+  background: radial-gradient(circle, #1e1e2f, #0d0d1a);
+  display: flex; align-items: center; justify-content: center;
+  height: 100vh; overflow: hidden;
+font-family: 'Courier New', monospace;
+  color: #000000;
+  color: white;
+}
+
+/* Reutilizamos exactamente el mismo .ubox de la escena previa */
+.ubox {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  text-align: center;
+  max-width: 480px;    /* igual que antes */
+  width: 90%;          /* igual que antes */
+}
+
+.avatar-row {
+  display: flex; justify-content: center; gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.avatar-caballero,
+.avatar-princesa {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  background-size: cover; background-position: center;
+  border: 4px solid #7a5af5;
+}
+
+.avatar-caballero { background-image: url('../img/ace_avatar.png'); }
+.avatar-princesa { background-image: url('../img/kiwii_avatar.png'); }
+
+.dialog p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+.dialog button {
+  background:#cc00ff;
+  color: #ffffff;
+  padding: 0.8rem 1.6rem;
+  border: none; border-radius: 20px;
+  font-size: 1rem; cursor: pointer;
+  box-shadow: 0 4px 12px rgba(122,90,245,0.4);
+  transition: transform 0.2s;
+  font-family: 'Courier New', monospace;
+  color: #ffffff;
+}
+
+.dialog button:hover { transform: scale(1.05); }
+
+.ending {
+  margin-top: 2rem;
+}
+
+.ending.hidden { display: none; }
+
+.kindred-logo {
+  width: 400px; 
+  margin-left: -5px;
+}
+
+.ending h2 {
+  font-size: 3rem; color: #1a1a2e; margin-bottom: rem;
+}
+
+#promisedBtn {
+  background: #7e75ff;
+  color: white;
+  padding: 0.7rem 2rem;
+  border: none; border-radius: 30px;
+  font-size: 1.2rem; cursor: default;
+  font-family: 'Courier New', monospace;
+  color: #ffffff;
+  
+}

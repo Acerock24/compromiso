@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Un hermanito para Kindred</title>
+  <link rel="stylesheet" href="css/siblings_dialog.css"/>
+</head>
+<body>
+  <audio id="dialogMusic" src="audio/bosque_nocturno.mp3" autoplay loop></audio>
+
+  <div class="ubox">
+    <div class="avatar-box">
+      <img id="aceAvatar"  src="img/ace_avatar.png"  alt="Ace"  class="avatar hidden"/>
+      <img id="kiwiAvatar" src="img/kiwii_avatar.png" alt="Kiwi" class="avatar hidden"/>
+    </div>
+
+    <div class="dialog-box">
+      <p id="dialogText"></p>
+    </div>
+
+    <!-- El botón ya no lleva 'hidden'; su texto y acción lo controla JS -->
+    <button id="nextBtn" class="next-btn">
+      Siguiente
+    </button>
+  </div>
+
+  <script src="js/siblings_dialog2.js"></script>
+</body>
+</html>

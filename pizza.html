@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minijuego: Pizza Mágica</title>
+  <link rel="stylesheet" href="css/pizza.css"/>
+</head>
+<body>
+  <audio id="pizzaMusic" src="audio/musica-pizza-italiana.mp3" autoplay loop></audio>
+
+  <div class="pizza-scene">
+    <header>
+      <h1>Prepara la Pizza Mágica</h1>
+      <p>Añade ingredientes hasta rellenar la base</p>
+    </header>
+    <div class="game-area">
+      <div id="pizzaBase" class="pizza-base"></div>
+     <div id="ingredients" class="ingredients">
+  <button class="ingredient" data-img="img/queso.png"       data-width="500" data-height="500">🧀 Queso</button>
+  <button class="ingredient" data-img="img/pepperoni.png"   data-width="250" data-height="250">🍕 Pepperoni</button>
+  <button class="ingredient" data-img="img/pina.png"        data-width="36" data-height="40">🍍 Piña</button>
+  <button class="ingredient" data-img="img/salsa.png"       data-width="500" data-height="500">🍅 Salsa</button>
+</div>
+    </div>
+    <button id="finishBtn" disabled>Terminar Pizza</button>
+    <button id="nextBtn" class="hidden">Continuar Aventura</button>
+    <div id="message" class="message"></div>
+  </div>
+
+  <script src="js/pizza.js"></script>
+</body>
+</html>

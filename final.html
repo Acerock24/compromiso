@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Almas Eternas - Propuesta</title>
+  <link rel="stylesheet" href="css/final.css"/>
+</head>
+<body>
+  <audio id="dialogMusic" src="audio/Marry-You.mp3" autoplay loop></audio>
+
+  <!-- Usamos solo .ubox aquí, igual que en la escena previa -->
+  <div class="ubox">
+    <div class="avatar-row" id="avatarRow">
+      <div class="avatar-caballero"></div>
+      <div class="avatar-princesa"></div>
+    </div>
+
+    <div class="dialog" id="dialog">
+      <p id="proposal-text">
+        Kiwi... después de todo este viaje... ¿quieres crear un nuevo título de este video juego conmigo?
+      </p>
+      <button id="yesBtn">Sí, quiero ❤️</button>
+    </div>
+
+    <div id="ending" class="ending hidden">
+      <img src="img/anillo.png" alt="Logo Kindred" class="kindred-logo"/>
+      <!--- <h2>Almas Eternas</h2> --->
+      <button id="promisedBtn">💍 ¡Prometidos!</button>
+    </div>
+  </div>
+
+  <script src="js/final.js"></script>
+</body>
+</html>

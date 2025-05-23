@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Escena: Coca-Cola Mágica</title>
+  <link rel="stylesheet" href="css/cocacola.css"/>
+</head>
+<body>
+  <!-- Música de fondo -->
+  <audio id="cokeMusic" src="audio/cancion-de-cocacola.mp3" autoplay loop></audio>
+
+  <div class="coke-scene">
+    <div id="arena" class="arena">
+      <img id="ace"   src="img/ace_avatar.png"   class="avatar ace"   alt="Ace el lobo"/>
+      <img id="kiwii" src="img/kiwii_avatar.png" class="avatar kiwii" alt="Kiwii la oveja"/>
+      <img id="coke"  src="img/coke.png"         class="coke"        alt="Lata de Coca-Cola"/>
+    </div>
+
+    <p id="message" class="message">Arrastra la lata hasta Kiwi.</p>
+    <button id="nextBtn" class="hidden">Misión cumplida → Continuar</button>
+  </div>
+
+  <script src="js/cocacola.js"></script>
+</body>
+</html>
